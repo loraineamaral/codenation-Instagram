@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+body {
+  background-color: #fafafa; }
+
+@media (min-width: 1281px) {
+  .header {
+    width: 70%;
+    margin: 0 auto; } }
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e8e8e8;
+  padding: 10px 15px; }
+  @media (min-width: 1281px) {
+    .header__top {
+      justify-content: space-around !important; } }
+  .header__top svg {
+    width: 38%; }
+    @media (min-width: 1281px) {
+      .header__top svg {
+        width: 8% !important; } }
+
+.header__stories {
+  padding: 20px 0 25px;
+  display: flex; }
+  @media (min-width: 1281px) {
+    .header__stories {
+      width: 55%;
+      margin: 0 auto;
+      justify-content: flex-start; } }
+  .header__stories-profile {
+    margin: 0 12px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    position: relative;
+    border-radius: 50%; }
+    .header__stories-profile:nth-child(2) {
+      background-image: linear-gradient(45deg, #ff0, #f00, #90c); }
+  .header__stories-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 2px solid #FFE; }
+
+/* ---------------------main---------------------- */
+.post {
+  width: 93%;
+  margin: 20px auto;
+  border: 2px solid #e8e8e8;
+  border-radius: 10px; }
+  @media (min-width: 1281px) {
+    .post {
+      width: 40% !important; } }
+  .post__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px; }
+    .post__header-profile {
+      display: flex;
+      align-items: center; }
+    .post__header-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 8px; }
+    .post__header-name {
+      font-family: 'Open-sans', sans-serif;
+      font-weight: 700;
+      font-size: 14px; }
+  .post__img img {
+    width: 100%;
+    height: auto; }
+  .post-options {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; }
+    .post-options-left i {
+      margin: 0 5px; }
+  .post-likes {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2; }
+    .post-likes-img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 8px; }
+    .post-likes-text {
+      font-family: 'Open-sans', sans-serif;
+      font-size: 12px;
+      font-weight: 400; }
+      .post-likes-text span {
+        font-weight: 700; }
